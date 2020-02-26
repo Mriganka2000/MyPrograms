@@ -2,6 +2,7 @@
 #include<climits>
 #define MAX 1000
 
+// This function will show the demo of Parenthesization.
 void Print_Parenthesis(int i, int j, int n, int *bracket, char &name)
 {
     if (i == j)
@@ -11,11 +12,12 @@ void Print_Parenthesis(int i, int j, int n, int *bracket, char &name)
     }
 
     std::cout << "(";
-    Print_Parenthesis(i, *((bracket+i*n)+j), n, bracket, name);
+    Print_Parenthesis(i, *((bracket+i*n)+j), n, bracket, name); // *((bracket+i*n)+j) is similar to bracket[i][j]
     Print_Parenthesis(*((bracket+i*n)+j) + 1, j, n, bracket, name);
     std::cout << ")";
 }
 
+// Main Matrix Chain Multiplication Algorithm.
 void Matrix_Chain_Multiplication(int p[], int n)
 {
     int table[n][n], bracket[n][n];
