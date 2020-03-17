@@ -51,7 +51,9 @@ int main()
     std::cout << "Enter the value and weight of the elements :- " << std::endl;
     for(int i = 0; i < n; i++)
     {
+        std::cout << "Enter the value of the item :- ";
         std::cin >> arr[i].value;
+        std::cout << "Enter the weight of the item :- ";
         std::cin >> arr[i].weight;
     }
 
