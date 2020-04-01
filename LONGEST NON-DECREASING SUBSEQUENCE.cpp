@@ -57,7 +57,7 @@ void Solution(int arr[], int n)
 
 int main()
 {
-    int arr[100];
+    int arr[MAX];
     int n;
 
     std::cout << "Enter the size of the array :- ";
