@@ -29,6 +29,6 @@ if __name__ == '__main__':
     
     print("Before Inevert")
     printf(head)
-    invert(head)
+    head = invert(head)
     print("Before Inevert")
     printf(head)
